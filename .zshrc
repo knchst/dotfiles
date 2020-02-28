@@ -139,14 +139,6 @@ if [ -d $HOME/.zsh ]; then
   done
 fi
 
-# load $HOME/.zsh_local/*
-if [ -d $HOME/.zsh_local ]; then
-  for i in `ls -1 $HOME/.zsh_local`; do
-    echo "📍  Load $i"
-    src=$HOME/.zsh_local/$i; [ -f $src ] && . $src
-  done
-fi
-
 SUCCESS='$'
 ERROR='$'
 
@@ -169,8 +161,5 @@ PS2="%_> "
 SPROMPT="zsh: Did you mean: %{[4m[31m%}%r%{[14m[0m%} [nyae]? "
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# added by travis gem
-[ -f /Users/muukii/.travis/travis.sh ] && source /Users/muukii/.travis/travis.sh
 
 #[[ -n $(which starship) ]] && eval $(starship init zsh)

@@ -23,12 +23,4 @@ PS1="
 
 # local
 [ -f ~/.bashrc.local ] && source ~/.bashrc.local
-
-export NVM_DIR="/Users/Muukii/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
-# added by travis gem
-[ -f /Users/muukii/.travis/travis.sh ] && source /Users/muukii/.travis/travis.sh
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

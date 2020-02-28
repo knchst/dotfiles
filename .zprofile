@@ -4,7 +4,7 @@ which ghq > /dev/null && export GHQ_ROOT=~/.ghq
 
 # setup goenv
 if [ -d "$HOME/.goenv" ]; then
-  export GOPATH="$HOME/develop"
+  export GOPATH="$HOME/Developer"
   export GOBIN="$GOPATH/bin"
   export GOENV_ROOT="$HOME/.goenv"
   if [[ ":${PATH}:" != *:"${GOENV_ROOT}/bin":* ]]; then
@@ -40,13 +40,3 @@ if [ -d "$HOME/.rbenv" ]; then
     which rbenv > /dev/null 2>&1 && eval "$(rbenv init -)"
   fi
 fi
-
-# setup nvm
-if [ -d "$HOME/.nvm" ]; then
-  export NVM_DIR="$HOME/.nvm"
-  if [[ ":${PATH}:" != *:"${NVM_DIR}/bin":* ]]; then
-    [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-  fi
-fi
-
-export PATH="$HOME/.cargo/bin:$PATH"

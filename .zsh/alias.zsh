@@ -21,10 +21,3 @@ alias ghc="stack ghc"
 alias ghci="stack ghci"
 alias runghc="stack runghc"
 alias runhaskell="stack runghc"
-
-# alias for vim
-alias vi='vim -u $HOME/.virc'
-sw_vers=`which sw_vers 2>&1`
-if [[ $? == 0 ]]; then
-    alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
-fi

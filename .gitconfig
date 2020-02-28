@@ -1,13 +1,12 @@
 [user]
-	name = Muukii
-	email = muukii.app@gmail.com
-	signingkey = 5F608044
+	name = Kenichi Saito
+	email = knchst@icloud.com
 	useConfigOnly = true
 [merge]
   tool = vimdiff
 	ff = false
 [core]
-	excludesfile = /Users/muukii/.gitignore_global
+	excludesfile = /Users/knchst/.gitignore_global
 	editor = vim
 [color]
 	ui = auto
@@ -133,7 +132,7 @@
 [commit]
 	gpgsign = false
 [github]
-	user = muukii
+	user = knchst
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
