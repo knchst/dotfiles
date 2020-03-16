@@ -16,7 +16,7 @@ module.exports = {
     foregroundColor: '#fff',
 
     // terminal background color
-    backgroundColor: 'rgba(14,18,25, 0.7)',
+    backgroundColor: 'rgba(46,49,52, 1)',
 
     // border color (window, tabs)
     borderColor: '#0E1219',
@@ -34,29 +34,29 @@ module.exports = {
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
     colors: {
-      black: '#000000',
-      lightBlack: '#ABABAB',
+      black: '#7D8B8F',
+      lightBlack: '#888888',
 
-      red: '#EE627B',
-      lightRed: '#EE627B',
+      red: '#F6844A',
+      lightRed: '#F24840',
 
-      green: '#E7766A',
-      lightGreen: '#E7766A',
+      green: '#6C906C',
+      lightGreen: '#6EB688',
 
-      yellow: '#F0A96E',
-      lightYellow: '#E3C593',
+      yellow: '#FDCA73',
+      lightYellow: '#FDCA73',
 
-      blue: '#65759B',
-      lightBlue: '#65759B',
+      blue: '#219FC5',
+      lightBlue: '#5DD8FF',
 
-      magenta: '#C54684',
-      lightMagenta: '#C54684',
+      magenta: '#AA0D91',
+      lightMagenta: '#FC5275',
 
-      cyan: '#90C6E2',
-      lightCyan: '#90C6E2',
+      cyan: '#44A799',
+      lightCyan: '#53CDBD',
 
-      white: '#E0E0E0',
-      lightWhite: '#ffffff'
+      white: '#AA0D91',
+      lightWhite: '#FFFFFF'
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)

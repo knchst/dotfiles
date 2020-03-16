@@ -131,6 +131,7 @@
 	keepBackup = true
 [commit]
 	gpgsign = false
+	template = /Users/knchst/.stCommitMsg
 [github]
 	user = knchst
 [filter "lfs"]

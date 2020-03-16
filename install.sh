@@ -19,3 +19,5 @@ for dotfile in .?* ; do
   fi
   echo "😎 Created $1/$dotfile$suffix"
 done
+
+mv wwdc17.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/

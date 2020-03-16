@@ -30,13 +30,20 @@ if [ -d "$HOME/.swiftenv" ]; then
   eval "$(swiftenv init -)"
 fi
 
-which rbenv > /dev/null 2>&1 && eval "$(direnv hook zsh)" && export EDITOR="vim"
-
 # setup rbenv
 if [ -d "$HOME/.rbenv" ]; then
   export RBENV_ROOT="$HOME/.rbenv"
   if [[ ":${PATH}:" != *:"${RBENV_ROOT}/bin":* ]]; then
     export PATH="$RBENV_ROOT/bin:$PATH"
     which rbenv > /dev/null 2>&1 && eval "$(rbenv init -)"
+  fi
+fi
+
+# setup nodenv
+if [ -d "$HOME/.nodenv" ]; then
+  export NODENV_ROOT="$HOME/.nodenv"
+  if [[ ":${PATH}:" != *:"${NODENV_ROOT}/bin":* ]]; then
+    export PATH="$NODENV_ROOT/bin:$PATH"
+    which rbenv > /dev/null 2>&1 && eval "$(nodenv init -)"
   fi
 fi
