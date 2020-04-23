@@ -23,6 +23,7 @@
     pr = hub pull-request -F ./.github/PULL_REQUEST_TEMPLATE.md
 
 	review = !git fetch && git checkout "$1"
+    sync = !git checkout develop && git pull origin develop && git fetch -p origin && git branch --merged | grep -v develop | grep -v '*' | xargs -I % git branch -d %
 # status/show (s)
     s  = status
     ss = status -s
