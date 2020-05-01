@@ -47,3 +47,6 @@ if [ -d "$HOME/.nodenv" ]; then
     which rbenv > /dev/null 2>&1 && eval "$(nodenv init -)"
   fi
 fi
+
+# setup flutter
+export PATH="$PATH:/usr/local/bin/flutter/bin"

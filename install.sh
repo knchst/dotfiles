@@ -21,3 +21,5 @@ for dotfile in .?* ; do
 done
 
 mv wwdc17.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+
+git clone https://github.com/flutter/flutter.git -b stable && mv ./flutter /usr/local/bin
