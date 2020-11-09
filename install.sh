@@ -20,6 +20,7 @@ for dotfile in .?* ; do
   echo "😎 Created $1/$dotfile$suffix"
 done
 
-mv wwdc17.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
+cp wwdc17.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 
 git clone https://github.com/flutter/flutter.git -b stable && mv ./flutter /usr/local/bin
+rm -rf ./flutter

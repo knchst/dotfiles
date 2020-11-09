@@ -4,7 +4,7 @@ echo "📦  Load zshrc"
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export TERM=xterm-256color
-
+export PATH=/usr/local/bin:$PATH
 # use key map like emacs
 bindkey -e
 
