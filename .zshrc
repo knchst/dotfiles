@@ -139,6 +139,8 @@ if [ -d $HOME/.zsh ]; then
   done
 fi
 
+source ~/.zprofile
+
 SUCCESS='$'
 ERROR='$'
 
