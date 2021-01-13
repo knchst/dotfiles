@@ -1,26 +1,17 @@
 #! /bin/sh
 
-TARGET=$HOME
-IGNOREFILES=('..', '.hgrc' '.DS_Store', '.gitignore')
+# install HomeBrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-for dotfile in .?* ; do
-    
-  if `echo ${IGNOREFILES[@]} | grep -q "$dotfile"` ; then
-    echo "😌 Ignored ${dotfile}"
-    continue
-  fi
-  
-  if [[ -f $dotfile ]]; then
-    ln -sf $PWD/$dotfile $TARGET
-    suffix="@"
-  elif [[ -d $dotfile ]]; then
-    ln -sf $PWD/$dotfile $TARGET/
-    suffix="/"
-  fi
-  echo "😎 Created $1/$dotfile$suffix"
-done
+brew tap Homebrew/bundle
+brew bundle
 
 cp wwdc17.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 
 git clone https://github.com/flutter/flutter.git -b stable && mv ./flutter /usr/local/bin
 rm -rf ./flutter
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+
+./install_dotfile.sh
