@@ -50,3 +50,7 @@ fi
 
 # setup flutter
 export PATH="$PATH:/usr/local/bin/flutter/bin"
+
+# startship
+# https://github.com/starship/starship
+eval "$(starship init zsh)"
