@@ -54,3 +54,5 @@ export PATH="$PATH:/usr/local/bin/flutter/bin"
 # startship
 # https://github.com/starship/starship
 eval "$(starship init zsh)"
+
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
