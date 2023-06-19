@@ -1,6 +1,4 @@
 echo "📦  Load zprofile"
-# setup ghq
-which ghq > /dev/null && export GHQ_ROOT=~/.ghq
 
 # setup goenv
 if [ -d "$HOME/.goenv" ]; then
@@ -48,11 +46,6 @@ if [ -d "$HOME/.nodenv" ]; then
   fi
 fi
 
-# setup flutter
-export PATH="$PATH:/usr/local/bin/flutter/bin"
-
-# startship
-# https://github.com/starship/starship
-eval "$(starship init zsh)"
-
 export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
+
+eval "$(/opt/homebrew/bin/brew shellenv)"

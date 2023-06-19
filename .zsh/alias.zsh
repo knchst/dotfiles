@@ -21,5 +21,3 @@ alias ghc="stack ghc"
 alias ghci="stack ghci"
 alias runghc="stack runghc"
 alias runhaskell="stack runghc"
-
-alias simgif="~/Developer/knchst/dotfiles/scripts/sim-gif.sh"

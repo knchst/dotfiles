@@ -10,10 +10,6 @@ brew bundle
 mkdir ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 cp wwdc17.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 
-# Flutter
-git clone https://github.com/flutter/flutter.git -b stable && mv ./flutter /usr/local/bin
-rm -rf ./flutter
-
 # Vundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
