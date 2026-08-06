@@ -10,16 +10,5 @@ brew bundle
 mkdir ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 cp wwdc17.xccolortheme ~/Library/Developer/Xcode/UserData/FontAndColorThemes/
 
-# Vundle
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
-# rbenv
-git clone https://github.com/rbenv/rbenv.git ~/.rbenv
-git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-
-# nodenv
-git clone https://github.com/nodenv/nodenv.git ~/.nodenv
-git clone https://github.com/nodenv/node-build.git ~/.nodenv/plugins/node-build
-
 # install dotfiles
-./install_dotfile.sh
+./install_dotfiles.sh

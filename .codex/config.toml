@@ -1,0 +1,47 @@
+model = "gpt-5.6-sol"
+model_reasoning_effort = "medium"
+personality = "friendly"
+project_doc_fallback_filenames = ["CLAUDE.md"]
+web_search = "live"
+
+approval_policy = "never"
+approvals_reviewer = "user"
+sandbox_mode = "danger-full-access"
+service_tier = "priority"
+
+stream_idle_timeout_ms = 7200000
+stream_max_retries = 5
+request_max_retries = 4
+
+[features]
+memories = true
+js_repl = false
+hooks = true
+fast_mode = true
+
+[shell_environment_policy]
+inherit = "core"
+
+[shell_environment_policy.set]
+CLAUDE_CODE_DISABLE_1M_CONTEXT = "1"
+CLAUDE_CODE_DISABLE_ADAPTIVE_THINKING = "1"
+CLAUDE_CODE_DISABLE_AUTO_MEMORY = "1"
+CLAUDE_CODE_DISABLE_TERMINAL_TITLE = "1"
+CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS = "1"
+CLAUDE_CODE_NO_FLICKER = "1"
+CLAUDE_CODE_SUBAGENT_MODEL = "sonnet"
+ENABLE_TOOL_SEARCH = "1"
+
+[tui]
+status_line = [
+    "model-with-reasoning",
+    "context-remaining",
+    "current-dir",
+    "git-branch",
+    "context-window-size",
+]
+terminal_title = []
+theme = "base16-eighties-dark"
+
+[tool_suggest]
+disabled_tools = [{ type = "plugin", id = "slack@openai-curated-remote" }]

@@ -1,0 +1,4 @@
+interface:
+  display_name: "自分らしくリライト"
+  short_description: "GmailとSlack由来の本人らしい文体へ書き換えます"
+  default_prompt: "Use $rewrite-as-me to rewrite this message in my voice without changing its meaning."

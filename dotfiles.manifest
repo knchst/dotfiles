@@ -1,0 +1,13 @@
+link .gitconfig
+link .zprofile
+link .zsh
+link .zshenv
+link .zshrc
+link .codex/AGENTS.md
+seed .codex/config.toml
+link .codex/hooks.json
+link .claude/CLAUDE.md
+seed .claude/settings.json
+link .claude/statusline-command.sh
+link .config/opencode/opencode.json
+link .config/opencode/worktree.zsh
