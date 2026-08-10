@@ -58,3 +58,8 @@ For multi-step tasks, state a brief plan:
 ```
 
 Strong success criteria let you loop independently. Weak criteria ("make it work") require constant clarification.
+
+## 5. Slack
+
+- For any Slack task, use the `agent-slack` skill and its CLI.
+- Prefer `agent-slack` over browser or UI automation for Slack reads, searches, and writes unless the user explicitly requests another method.
