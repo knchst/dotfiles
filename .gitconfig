@@ -6,7 +6,6 @@
   tool = vimdiff
 	ff = false
 [core]
-	excludesfile = /Users/knchst/.gitignore_global
 	editor = vim
 [color]
 	ui = auto
@@ -20,8 +19,6 @@
 	default = current
 [alias]    
     alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
-    pr = hub pull-request -F ./.github/PULL_REQUEST_TEMPLATE.md
-
 	review = !git fetch && git checkout "$1"
     sync = !git checkout "$1" && git pull origin "$1" && git fetch -p origin && git branch --merged | grep -v "$1" | grep -v '*' | xargs -I % git branch -d %
 # status/show (s)
@@ -112,29 +109,11 @@
 	wip = !git commit -m ':zap: WIP'
     cleanup = !git commit -m ':sparkles: Cleanup'
     update = !git commit -m ':evergreen_tree: Update'
-# hub
-    pr = pull-request
-	ksdiff = !git difftool -y -t Kaleidoscope
 # worktree
     w = !git worktree
-[filter "media"]
-	required = true
-	clean = git media clean %f
-	smudge = git media smudge %f
 [url "git@github.com:"]
 	insteadOf = https://github.com/
-#driver for merging XCode project files
-[filter "hawser"]
-	clean = git hawser clean %f
-	smudge = git hawser smudge %f
-	required = true
 [mergetool]
 	keepBackup = true
 [commit]
 	gpgsign = false
-	template = /Users/knchst/.stCommitMsg
-[github]
-	user = knchst
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
