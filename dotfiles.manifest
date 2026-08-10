@@ -5,6 +5,7 @@ link .zshrc
 link .codex/AGENTS.md
 seed .codex/config.toml
 link .codex/hooks.json
+link .codex/pets
 link .claude/CLAUDE.md
 seed .claude/settings.json
 link .claude/statusline-command.sh
