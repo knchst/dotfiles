@@ -1,0 +1,64 @@
+add_newline = false
+command_timeout = 2000
+
+# Keep context on the first line and the command cursor on a clean second line.
+format = "$directory$git_branch$git_status$python$nodejs$cmd_duration$line_break$character"
+
+[directory]
+truncate_to_repo = true
+truncation_length = 3
+truncation_symbol = "…/"
+style = "bold cyan"
+read_only = " ro"
+read_only_style = "bold red"
+format = "[$path]($style)[$read_only]($read_only_style) "
+
+[git_branch]
+symbol = "git:"
+style = "bold purple"
+format = "on [$symbol$branch]($style) "
+truncation_length = 28
+truncation_symbol = "…"
+
+[git_status]
+style = "bold yellow"
+format = "([$all_status$ahead_behind]($style) )"
+conflicted = "!${count} "
+ahead = "↑${count} "
+behind = "↓${count} "
+diverged = "↑${ahead_count} ↓${behind_count} "
+untracked = "?${count} "
+stashed = "≡${count} "
+modified = "~${count} "
+staged = "+${count} "
+renamed = "»${count} "
+deleted = "−${count} "
+ignore_submodules = true
+
+[python]
+symbol = "py:"
+style = "bold green"
+format = "via [$symbol$virtualenv]($style) "
+detect_extensions = []
+detect_files = []
+detect_folders = []
+detect_env_vars = ["VIRTUAL_ENV"]
+
+[nodejs]
+symbol = "node:"
+style = "bold green"
+format = "via [$symbol$version]($style) "
+
+[cmd_duration]
+min_time = 2000
+show_milliseconds = false
+style = "dimmed yellow"
+format = "took [$duration]($style) "
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold green)"
+
+[aws]
+disabled = true
