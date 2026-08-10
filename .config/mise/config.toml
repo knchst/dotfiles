@@ -1,5 +1,6 @@
 [tools]
 delta = "latest"
+gcloud = "latest"
 gh = "latest"
 "github:getsentry/XcodeBuildMCP" = "latest"
 "github:stablyai/agent-slack" = "latest"
@@ -7,5 +8,9 @@ herdr = "latest"
 lazygit = "latest"
 node = "24"
 opencode = "latest"
+python = "3.13"
 starship = "latest"
 yazi = "latest"
+
+[env]
+CLOUDSDK_PYTHON = "{{env.HOME}}/.local/share/mise/installs/python/3.13/bin/python3"
