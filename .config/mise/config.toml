@@ -1,2 +1,11 @@
 [tools]
+delta = "latest"
+gh = "latest"
+"github:getsentry/XcodeBuildMCP" = "latest"
+"github:stablyai/agent-slack" = "latest"
+herdr = "latest"
+lazygit = "latest"
 node = "24"
+opencode = "latest"
+starship = "latest"
+yazi = "latest"

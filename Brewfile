@@ -1,7 +1,0 @@
-tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/core"
-tap "homebrew/services"
-tap "getsentry/xcodebuildmcp"
-tap "tmspzz/tap"
-brew "xcodebuildmcp"

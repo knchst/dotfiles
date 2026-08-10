@@ -43,11 +43,11 @@ setopt interactive_comments
 # Machine-specific settings such as Kaku and OpenCode belong here.
 [[ -r "$HOME/.zshrc.local" ]] && source "$HOME/.zshrc.local"
 
+# Development tool versions
+eval "$("$HOME/.local/bin/mise" activate zsh)"
+
 # Kaku shell integration
 [[ -r "$HOME/.config/kaku/zsh/kaku.zsh" ]] && source "$HOME/.config/kaku/zsh/kaku.zsh"
 
 # Optional fzf integration
 [[ -r "$HOME/.fzf.zsh" ]] && source "$HOME/.fzf.zsh"
-
-# Development tool versions
-eval "$("$HOME/.local/bin/mise" activate zsh)"
