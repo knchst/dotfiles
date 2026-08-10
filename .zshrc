@@ -54,3 +54,8 @@ eval "$("$HOME/.local/bin/mise" activate zsh)"
 
 # Keep inherited and integration-added PATH entries unique.
 typeset -U path PATH
+
+# >>> oh-my-opencode-slim background subagents >>>
+export OPENCODE_EXPERIMENTAL_BACKGROUND_SUBAGENTS=true
+export OPENCODE_ENABLE_EXA=1
+# <<< oh-my-opencode-slim background subagents <<<
