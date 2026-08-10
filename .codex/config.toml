@@ -13,6 +13,13 @@ stream_idle_timeout_ms = 7200000
 stream_max_retries = 5
 request_max_retries = 4
 
+[mcp_servers.XcodeBuildMCP]
+command = "xcodebuildmcp"
+args = ["mcp"]
+
+[mcp_servers.XcodeBuildMCP.env]
+DEVELOPER_DIR = "/Applications/Xcode.app/Contents/Developer"
+
 [features]
 memories = true
 js_repl = false
