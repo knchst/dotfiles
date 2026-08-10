@@ -51,3 +51,6 @@ eval "$("$HOME/.local/bin/mise" activate zsh)"
 
 # Optional fzf integration
 [[ -r "$HOME/.fzf.zsh" ]] && source "$HOME/.fzf.zsh"
+
+# Keep inherited and integration-added PATH entries unique.
+typeset -U path PATH
