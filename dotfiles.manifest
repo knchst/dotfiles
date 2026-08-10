@@ -12,3 +12,4 @@ link .claude/statusline-command.sh
 link .config/opencode/opencode.json
 link .config/opencode/worktree.zsh
 link .config/starship.toml
+link .config/mise/config.toml

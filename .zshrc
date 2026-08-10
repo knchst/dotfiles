@@ -48,3 +48,6 @@ setopt interactive_comments
 
 # Optional fzf integration
 [[ -r "$HOME/.fzf.zsh" ]] && source "$HOME/.fzf.zsh"
+
+# Development tool versions
+eval "$("$HOME/.local/bin/mise" activate zsh)"
