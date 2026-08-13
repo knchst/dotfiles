@@ -9,6 +9,7 @@ herdr = "latest"
 lazygit = "latest"
 node = "24"
 opencode = "latest"
+"npm:@opencode-ai/cli" = { version = "0.0.0-next-17400", allow_builds = ["@opencode-ai/cli"] }
 "npm:@bitkyc08/opencodex" = "2.12.0"
 pi = "latest"
 python = "3.13"
